@@ -130,10 +130,6 @@ h6 {
   min-width: 0;
 }
 
-body {
-  overflow: hidden;
-}
-
 /*
 (i) Стили будут применяться ко 
 всем классам содержащим *__container
@@ -463,6 +459,7 @@ section {
   background: #F4F4F4;
   border-radius: 0px 0px 95px 0;
   max-width: 326px;
+  width: 100%;
 }
 
 .down-menu__info img {
