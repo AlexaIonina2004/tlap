@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main>
+        <section class="blog">
+          <div class="blog__container">
+            <div class="blog__content">
+              <div class="blog__decor decor">
+                <div class="decor__top">
+                  <img src="../img/blog/1.jpeg" alt="blog-img" />
+                  <img src="../img/blog/2.jpeg" alt="blog-img" />
+                  <img src="../img/blog/3.jpeg" alt="blog-img" />
+                </div>
+                <div class="decor__bottom">
+                  <img src="../img/blog/4.jpeg" alt="blog-img" />
+                  <img src="../img/blog/5.jpeg" alt="blog-img" />
+                  <img src="../img/blog/6.jpeg" alt="blog-img" />
+                  <img src="../img/blog/7.jpeg" alt="blog-img" />
+                </div>
+              </div>
+              <div class="blog__info">
+                <h1 class="blog__title">Подпишитесь на наш блог</h1>
+                <p class="blog__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.
+                </p>
+                <form action="#" class="blog__form form-blog">
+                  <input
+                    type="text"
+                    placeholder="Ваша почта"
+                    class="form-blog__input"
+                  />
+                  <button type="submit" class="form-blog__button button">
+                    Отправить
+                  </button>
+                
+                </form>
+                <div class="blog__agreement">
+                    By clicking Sign Up you're confirming that you agree with
+                    our <a href="#">Terms</a> and <a href="#">Conditions</a>.
+                  </div>
+              </div>
+              <div class="blog__decor decor">
+                <div class="decor__right-decor">
+                  <img src="../img/blog/8.jpeg" alt="blog-img" />
+                  <img src="../img/blog/9.jpg" alt="blog-img" />
+                  <img src="../img/blog/10.jpeg" alt="blog-img" />
+                  <img src="../img/blog/11.jpeg" alt="blog-img" />
+                </div>
+                <div class="decor__right-decor-bottom">
+                  <img src="../img/blog/12.jpeg" alt="blog-img" />
+                  <img src="../img/blog/13.jpeg" alt="blog-img" />
+                  <img src="../img/blog/14.jpeg" alt="blog-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- @@include('html/_footer.htm',{}) -->
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

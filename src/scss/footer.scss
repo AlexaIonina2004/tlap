@@ -1,0 +1,248 @@
+//====================================================================================================
+
+.footer {
+  border-radius: 64px 64px 0 0;
+  padding: 108px 64px 64px 64px;
+  background: $mainDark;
+  color: $strokeDay;
+  @media (max-width: em(607)){
+    padding: 64px 34px 55px 34px;
+  }
+  @media (max-width: em(607)){
+    padding: 64px 0 55px 0;
+  }
+  /* .footer__container */
+
+  &__container {
+  }
+
+  /* .footer__blocks */
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    gap: 37px;
+    @media (max-width: em(991)){
+flex-direction: column;
+    }
+    
+  }
+
+  /* .footer__content */
+
+  &__content {
+  }
+
+  /* .footer__logo */
+
+  &__logo {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 114%;
+    color: $dayBackground;
+    margin-bottom: 24px;
+  }
+
+  /* .footer__social */
+
+  &__social {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 27px;
+    a {
+      border-radius: 100%;
+      background: $socialMediaBackgroundDarks;
+      padding: 10px;
+    }
+  }
+
+  /* .footer__text */
+
+  &__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 177%;
+    padding-top: 24px;
+    border-top: 1px solid $secondaryText;
+    max-width: 350px;
+    @media (max-width: em(1330)){
+        font-size: 13px;
+        // max-width: 100%;
+    }
+  }
+
+  /* .footer__nav */
+
+  &__nav {
+    display: flex;
+    @media (max-width: em(991)){
+          flex-wrap: wrap;
+    }
+    @media (max-width: em(607)){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       }
+  }
+
+  /* .footer__list */
+
+  &__list {
+    &:first-child {
+      margin-right: 100px;
+      @media (max-width: em(1330)){
+          margin-right: 37px;
+      }
+    }
+    &:nth-child(2) {
+      margin-right: 37px;
+    }
+  }
+
+  /* .footer__item */
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+
+  /* .footer__link */
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    transition: 0.3s;
+    color: $strokeDay;
+
+    &:hover {
+      text-decoration: underline;
+      color: $dayBackground;
+    }
+    @media (max-width: em(1330)){
+        font-size: 15px;
+    }
+
+    @media (max-width: em(607)){
+font-size: rem(12);
+    }
+  }
+
+  /* .footer__contacts */
+
+  &__contacts {
+    @media (max-width: em(766)){
+          margin-top: 40px;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $dayBackground;
+    margin-bottom: 24px;
+    @media (max-width: em(1330)){
+        font-size: 17px;
+    }
+    @media (max-width: em(607)){
+        font-size: 14px;
+    }
+  }
+  /* .footer__connect */
+
+  &__connect {
+    display: flex;
+    gap: 12px;
+    span {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: em(1330)){
+        font-size: 14px;
+    }
+    }
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.footer {
+  /* .footer__politic */
+
+  &__politic {
+    padding-top: 54px;
+    border-top: 1px solid $secondaryText;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    @media (max-width: em(1243)){
+        flex-direction: column;
+            }
+  }
+}
+.politic-footer {
+  /* .politic-footer__text */
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    a {
+      text-decoration: underline;
+      color: $dayBackground;
+    }
+    @media (max-width: em(1243)){
+          font-size: 14px;
+    }
+  }
+
+  /* .politic-footer__items */
+
+  &__items {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    @media (max-width: em(1243)){
+gap: 24px;
+    }
+    @media (max-width: em(731)){
+flex-direction: column;
+align-items: baseline;
+    }
+   
+  }
+
+  /* .politic-footer__info */
+
+  &__info {
+    display: flex;
+    gap: 24px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration: underline;
+    @media (max-width: em(1243)){
+        font-size: 12px;
+        gap: 14px;
+    }
+  }
+
+  /* .politic-footer__pay */
+
+  &__pay {
+    @media (max-width: em(607)){
+     display: flex;
+     gap: 21px;
+    }
+  }
+}
+
+//====================================================================================================

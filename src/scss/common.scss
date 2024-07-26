@@ -1,0 +1,98 @@
+// Заголовки, общие БЄМ блоки и проче...
+section {
+    margin-bottom: 128px;
+    @media (max-width: em(519)){
+          margin: 0;
+    }
+}
+.button {
+    display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: $dayBackground;
+  background: $colorPrimaryColorPrimary;
+  border-radius: 40px;
+  padding: 16px 32px;
+  transition: 0.3s;
+  &:hover {
+    background: $socialMediaBackgroundDarks;
+  }
+  @media (max-width: em(1486)) {
+    font-size: rem(16);
+  }
+}
+.title {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 120%;
+  color: $mainDark;
+  @media (max-width: em(768)){
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--main-dark);
+  }
+}
+.tool {
+  /* .tool__item */
+
+  &__item {
+  }
+}
+.item-tool {
+  // border-radius: 0px 0px 95px 0;
+  color: $mainDark;
+  position: relative;
+  // padding: 24px 64px 20px 32px;
+  img {
+    margin-bottom: 16px;
+    border-radius: 32px;
+    // max-width: 226px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /* .item-tool__category */
+
+  &__category {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+    background: $dayBackground;
+    max-width: 100%;
+    border-radius: 33px;
+    padding: 6px 20px;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+  
+  }
+
+  /* .item-tool__title */
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    max-width: 174px;
+    font-size: 20px;
+    line-height: 130%;
+    @media (max-width: em(768)){
+          font-size: 18px;
+    }
+  }
+
+  /* .item-tool__text */
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #898989;
+    @media (max-width: em(768)){
+        font-size: 12px;
+  }
+  }
+}
